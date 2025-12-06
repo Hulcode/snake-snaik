@@ -27,14 +27,20 @@ body .container .play-ground {
     background-color: #212837;
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    aspect-ratio: 1; // Add this - keeps it square
+    width: 100%;
 }
 
 .play-ground .food {
     background-color: #ff003d;
+     min-width: 1px;  // Add minimum size
+    min-height: 1px; 
 }
 
 .play-ground .head {
     background-color: #60cbff;
+     min-width: 1px;  // Add minimum size
+    min-height: 1px; 
 }
 
 .controls {
@@ -74,5 +80,8 @@ body .container .play-ground {
     .controls i {
         padding: 15px 0;
         font-size: 1.5rem;
+    }
+      .play-ground {
+        height: 90vmin; // Add this - make playground square
     }
 }
