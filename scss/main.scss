@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: Cairo;
+      font-family: "Cairo", sans-serif;
+}
+body
+{
+    height: 100vb;
+}
+
+body .container
+{
+background-color: #293447;
+width:75vmin ;
+height: 80vmin;
+}
+
+ body .container .game-detailes
+ {
+    padding: 20px 27px;
+ }
+
+body .container  .play-ground
+{
+    background-color: #212837;
+    grid-template:repeat(30,1fr)/repeat(30,1fr);
+    display: grid;
+}
+.play-ground .food
+{
+    background-color: #ff003d;
+}
+
+.play-ground .head
+{
+    background-color: #60cbff;
+}
+.controls 
+{
+    display: none;
+}
+.controls i{
+    padding: 25px 0;
+    color: #b8c6dc;
+    width: calc(100%/4);
+    cursor: pointer;
+    border-right: 1px solid #171b26;
+}
+
+@media screen and (max-width:800px){
+    .container
+    {
+        width: 90vmin;
+        height: 115vmin;
+    }
+    .game-detailes
+    {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+    .controls{
+        display: flex;
+    }
+
+     .controls i{
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+}
