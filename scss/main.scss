@@ -29,6 +29,7 @@ body .container .play-ground {
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
     aspect-ratio: 1; // Add this - keeps it square
     width: 100%;
+    gap: 1px;
 }
 
 .play-ground .food {
